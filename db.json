@@ -1,6 +1,7 @@
 {
   "users": [
-    {"id":1,"username":"Jesus","state":true,"deck":[1,2,3,4,5]},
+    {
+    "id":1,"username":"Jesus","state":true,"deck":[1,2,3,4,5]},
     {"id":2,"username":"Isabola","state":true,"deck":[50,20,31,46,59]},
     {"id":3,"username":"Sebas","state":true,"deck":[501,202,317,463,589]},
     {"id":4,"username":"Camila","state":false,"deck":[12,44,67,89,120]},
@@ -29,24 +30,9 @@
     {"id":27,"username":"Sebastian","state":true,"deck":[7,14,21,28,35]},
     {"id":28,"username":"Paula","state":false,"deck":[17,34,51,68,85]},
     {"id":29,"username":"Esteban","state":true,"deck":[121,232,343,454,565]},
-    {"id":30,"username":"Camila","state":true,"deck":[13,26,39,52,65]},
-    {"id":31,"username":"Juan","state":false,"deck":[15,30,45,60,75]},
-    {"id":32,"username":"Maria","state":true,"deck":[102,204,306,408,510]},
-    {"id":33,"username":"Andres","state":true,"deck":[8,16,24,32,40]},
-    {"id":34,"username":"Lorena","state":false,"deck":[18,36,54,72,90]},
-    {"id":35,"username":"Diego","state":true,"deck":[123,234,345,456,567]},
-    {"id":36,"username":"Tatiana","state":true,"deck":[21,42,63,84,105]},
-    {"id":37,"username":"Fabian","state":false,"deck":[11,33,55,77,99]},
-    {"id":38,"username":"Sandra","state":true,"deck":[130,260,390,520,650]},
-    {"id":39,"username":"Mario","state":true,"deck":[12,24,36,48,60]},
-    {"id":40,"username":"Jessica","state":false,"deck":[22,44,66,88,110]},
-    {"id":41,"username":"Nicolas","state":true,"deck":[101,111,121,131,141]},
-    {"id":42,"username":"Paola","state":true,"deck":[15,25,35,45,55]},
-    {"id":43,"username":"Felipe","state":false,"deck":[19,29,39,49,59]},
-    {"id":44,"username":"Valeria","state":true,"deck":[111,222,333,444,555]},
-    {"id":45,"username":"Martin","state":true,"deck":[7,14,21,28,35]},
-    {"id":46,"username":"Carla","state":false,"deck":[17,34,51,68,85]},
-    {"id":47,"username":"Andres","state":true,"deck":[121,232,343,454,565]}
+    {"id":30,"username":"Camila","state":true,"deck":[13,26,39,52,65]}
   ],
-  "worlds":[1,2,3,4,5,6,7,8]
+  "worlds": [
+    1, 2, 3, 4, 5, 6, 7, 8
+  ]
 }
