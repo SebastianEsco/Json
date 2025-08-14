@@ -22,7 +22,7 @@ public class HttpTest : MonoBehaviour
 
     [SerializeField]
     private RawImage[] rawImage;
-    [SerializeField] private TextMeshProUGUI id;
+    [SerializeField] private TMP_InputField id;
 
     void Start()
     {
@@ -31,16 +31,9 @@ public class HttpTest : MonoBehaviour
 
     public void NuevoUsuario()
     {
-        string usuario = id.text.Trim();
-
-        if (int.TryParse(usuario, out int userId))
-        {
-            StartCoroutine(GetUser(userId)); 
-        }
-        else
-        {
-            Debug.LogError("El valor ingresado no es un ID válido: '" + usuario + "'");
-        }
+        string usuario = id.text.Trim();    
+        int userId = int.Parse(id.text);
+        StartCoroutine(GetUser(userId)); 
     }
 
     IEnumerator GetUser(int userId)
