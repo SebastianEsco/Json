@@ -22,6 +22,8 @@ public class HttpTest : MonoBehaviour
 
     [SerializeField]
     private RawImage[] rawImage;
+    [SerializeField] private TextMeshProUGUI[] cardNames;
+    [SerializeField] private TextMeshProUGUI userName;
     [SerializeField] private TMP_InputField id;
 
     void Start()
@@ -53,6 +55,8 @@ public class HttpTest : MonoBehaviour
                 Debug.Log(json);
                 
                 PlayerData player = JsonUtility.FromJson<PlayerData>(json);
+                
+                userName.text = "Usuario: " + player.username;
                 
                 List<int> deckList = player.deck;
                 
@@ -97,6 +101,7 @@ public class HttpTest : MonoBehaviour
                 string json = request.downloadHandler.text;
                 Character character = JsonUtility.FromJson<Character>(json);
                 Debug.Log(character.id + ":" + character.name + " is an " + character.species);
+                cardNames[imagePosition].text = character.name;
                 StartCoroutine(GetImage(character.image, imagePosition));
             }
             else
